@@ -1,0 +1,140 @@
+/*----------SECCION DE ROBOCOP SUS KEYFRAMES Y CLASES----------*/
+.robocop {
+    width: 82px;
+    height: 86px;
+    position: absolute;
+    border-radius: 40%;
+    bottom: 3%;
+    left: 90px;
+    z-index: 1;
+    background-image: url("../img/personajes/robocop-caminandoMinim.png");
+    animation: caminaRobocop 1s steps(8) infinite;
+}
+
+@keyframes caminaRobocop {
+    from {
+        background-position: 0
+    }
+
+    to {
+        background-position: -742px
+    }
+}
+
+.robocop_muere {
+    width: 57.5px;
+    height: 86px;
+    position: absolute;
+    bottom: 3%;
+    left: 80px;
+    z-index: 1;
+    background-image: url("../img/personajes/robocop-muere-alt.png");
+    animation: muereRobocop 1s steps(4) forwards;
+}
+
+@keyframes muereRobocop {
+
+    /* Partimos de la primera viñeta del sprite sheet */
+    from {
+        background-position: 0
+    }
+
+    /* Tamaño total de ancho del sprite. 
+       Es negativo para que no "camine" hacia atrás */
+    to {
+        background-position: -230px
+    }
+}
+
+.saltarConEstilo {
+    animation: SaltarEstilo 2800ms forwards;
+}
+
+@keyframes SaltarEstilo {
+
+    /* El estado inicial del elemento */
+    from {
+        transform: translateY(0);
+    }
+
+    /* El estado intermedio del elemento cuando está en el aire */
+    50% {
+        transform: translateY(-210px);
+    }
+
+    /* El estado final del elemento cuando vuelve al suelo */
+    to {
+        transform: translateY(0);
+    }
+}
+
+.enemigoED_209 {
+    width: 108px;
+    /*109 px*/
+    height: 122px;
+    position: absolute;
+    right: 50px;
+    /*left: -450px;  bottom: -162px;  */
+    bottom: 10px;
+    border-radius: 10%;
+    z-index: 1;
+    background-image: url("../img/personajes/enemigos/enemigoCaminandoDeDerecha.png");
+    animation: caminaEnemigoBip 800ms steps(8) infinite, moverEnemigo 7s forwards linear;
+    overflow: hidden;
+}
+
+@keyframes caminaEnemigoBip {
+
+    /* Partimos de la primera viñeta del sprite sheet */
+    from {
+        background-position: 0px
+    }
+
+    /* Tamaño total de ancho del sprite. 
+       Es positivo para que "camine" hacia adelante */
+    to {
+        background-position: 878px
+    }
+}
+
+/*   otro enemigo, con el css necesario para aparecer, pero falta la parte logica del javascript para introducirlo*/
+#enemigoHumanoide {
+    width: 69px;
+    /*109 px*/
+    height: 82px;
+    position: absolute;
+    right: 50px;
+    /*left: -450px;  bottom: -162px;*/
+    bottom: 10px;
+    border-radius: 10%;
+    z-index: 1;
+    background-image: url("../img/personajes/enemigos/enemigo-humanoide.png");
+    animation: caminaEnemigoHumanoide 1s steps(8) infinite, moverEnemigo 10s infinite linear;
+    overflow: hidden;
+}
+
+@keyframes caminaEnemigoHumanoide {
+
+    /* Partimos de la primera viñeta del sprite sheet */
+    from {
+        background-position: 0px
+    }
+
+    /* Tamaño total de ancho del sprite. 
+       Es positivo para que "camine" hacia adelante */
+    to {
+        background-position: 573px
+    }
+
+    ;
+}
+
+@keyframes moverEnemigo {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1000%);
+    }
+}

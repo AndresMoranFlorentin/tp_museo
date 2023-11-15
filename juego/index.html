@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego </title>
+    <link rel="stylesheet" href="css/entornoJuego.css">
+    <link rel="stylesheet" href="css/personajes.css">
+    <link rel="stylesheet" href="css/elementos.css">
+
+</head>
+
+<body>
+    <h1>Ven a Jugar :</h1>
+
+    <div id="caja">
+        <div id="entorno">
+            <div id="elementos">
+                <div id="cont_vidas">
+                    <h3>Vidas: 3</h3>
+                </div>
+                <div id="cronometro">
+                    <h3>00:00:00</h3>
+                </div>
+                <div id="puntaje">
+                    <h3>Puntos: 0</h3>
+                </div>
+            </div>
+            <div id="playMusic"></div>
+            <div id="menu" class="menu">
+                <div id="informe_juego" class="informe_juego"></div>
+                <div id="botones">
+                    <button id="play_juego">Play</button>
+                    <button id="instrucciones_game">Como Jugar</button>
+                </div>
+            </div>
+            <div id="instrucciones">
+                <!---este div siempre esta mostrando las instrucciones del juego pero con css lo oculto-->
+                <h2>COMO JUGAR :</h2>
+                <h3>El juego consiste, en que el personaje robocop,intente evitar
+                    el colisionar con sus enemigos que roban vidas y restan puntos, pero si toca los corazones, estos le
+                    recuperaran las vidas perdidas y puntos del juego, y si son mas de tres corazones seguidos sumara un
+                    poco de tiempo al cronometro
+                </h3>
+                <h3>Debe tratar de tocar los corazones para asi, extender su tiempo de juego lo mas posible(3 corazones
+                    consecutivos para sumar un minuto), y acumular puntos</h3>
+                <p>Movimientos del jugador (por ahora): Tecla ESPACIO, para saltar</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/Personajes.js"></script>
+<script src="js/EnemigoED_209.js"></script>
+<script src="js/Corazon.js"></script>
+<script src="js/Jugador.js"></script>
+<script src="js/juego.js"></script>
+<script src="js/Cronometro.js"></script>
+<script src="js/principal.js"></script>
+
+</html>
