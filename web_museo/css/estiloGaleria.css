@@ -1,4 +1,3 @@
-
 .navegador {
     display: flex;
     justify-content: space-between;
@@ -7,18 +6,18 @@
     z-index: 2;
 }
 
-.navegador> ul {
+.navegador>ul {
     list-style: none;
     overflow: hidden;
 }
 
-.navegador> ul> li {
+.navegador>ul>li {
     float: left;
     font-family: Arial, sans-serif;
     font-size: 20px;
 }
 
-.navegador> ul> li> a {
+.navegador>ul>li>a {
     list-style: none;
     display: block;
     color: #f2eaea;
@@ -26,24 +25,26 @@
     padding: 0;
     text-decoration: none;
 }
-  .navegador> ul> li:hover {
+
+.navegador>ul>li:hover {
     background: #0b0b0b;
 }
+
 /*-----SECCION FOOTER-----*/
 .footer_g {
     display: flex;
     justify-content: flex-start;
-    background-color: cadetblue;
+    background-color: #ab2930;
     height: 100px;
     width: 100%;
 }
 
-.footer_g> a {
+.footer_g>a {
     padding: 10px;
     margin-right: 10px;
 }
 
-.footer_g> img {
+.footer_g>img {
     width: 30px;
     height: 30px;
 }

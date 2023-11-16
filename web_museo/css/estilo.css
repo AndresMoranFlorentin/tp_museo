@@ -1,150 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Ajustamos la dirección principal a columna */
+    align-items: center;
+    text-align: left;
+    color: #241f20;
+    font-family: 'Roboto', sans-serif;
+}
 
 header {
-  background: #ab2930;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+    text-align: center;
+    width: 100%;
+    background: #ab2930;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* Color de fondo del encabezado */
+}
+
+header img {
+    max-width: 100%;
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 54%;
+}
+
+.logo_museo {
+    width: 10%;
+    height: 5%;
+    border-radius: 100%;
+    /*border: 2px solid #241f20;*/
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  float: left;
-  z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    z-index: 2;
 }
-nav img {
-  margin: 15px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
- }
+nav div {
+    display: inherit; 
+    justify-items: end;
+}
 nav ul {
-  list-style: none;
-  overflow: hidden;
+    list-style: none;
+    overflow: hidden;
+    margin: auto;
+    margin-right: 15px;
+
 }
 
 nav ul li {
-  float: left;
-  font-family: Arial, sans-serif;
-  font-size: 20px;
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-bottom: solid 3px transparent;
+    margin: auto 15px;
 }
+
 nav ul li a {
-  display: block;
-  margin: 15px;
-  color: #f2eaea;
-  text-decoration: none;
+    list-style: none;
+    display: block;
+    color: #f2eaea;
+    margin: 5px 0px;
+    padding: 0px 15px;
+    padding: 0;
+    text-decoration: none;
 }
+
 nav ul li:hover {
-  background: #0b0b0b;
+    
+    cursor: pointer;
+    border-bottom: 3px solid #f2eaea;
 }
-.btn_login {
-  background-color: blue;
-  color: white;
-  font-size: 16px;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin-left: 350px;
-   
-}
-/**----SECCION MAIN-----**/
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+
 main {
-  margin-top: 150px;
-  text-align: center;
-  max-width: 600px; /* O ajusta según tus necesidades */
-  width: 100%;
-  background-color: #f2eaea;
-  justify-content: center;
-  min-height: 100vh;
+    align-items: center;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    max-width: 800px;
+    /* O ajusta según tus necesidades */
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+
 }
-.img_principal{
- position: relative;
- display: inline-block;
+
+.img_principal {
+    position: relative;
+    margin: 20px;
 }
-.img_principal:hover .text_horario {
-  display: block;
-  border:solid 3px #f2eaea;
-  width: 100%;
-  font-family:  monospace;
-  background-color: rgba(27, 25, 25, 0.7);
-  color: rgb(225, 206, 206);
+
+.img_principal>img {
+    max-width: 100%;
+    height: auto;
 }
- 
-.text_horario{
-  display: none;
-  position: absolute;
-  bottom: 0;
-  height: 10%;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
+
+/* .img_principal>.text_horario {
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(173, 17, 17, 0.8);
+    padding: 8px;
+}*/
+.img_principal .text_horario {
+    display: block;
+    border: solid 3px #fefdfd;
+    width: 100%;
+    font-family: monospace;
+    background-color: #241f20;
+    color: #fefdfd;
 }
+
+.btn_login {
+    background-color: #241f20;
+    color: #fefdfd;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+   margin: auto;
+}
+
 .contenido {
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
+    margin: 20px 0;
 }
+
 /*****SECCION PARA GALERIA*****/
-.galeria_sala{
-display: flex;
-height: 300px;
+.galeria_sala {
+    display: flex;
+    height: 300px;
 }
-.galeria_sala>img{
-  width: 50%;
- }
-.galeria_sala>.text{
-  width: 50%;
-  background-color: rgb(117, 127, 213);
+
+.galeria_sala>img {
+    width: 50%;
 }
-/*-----SECCION ULTIMAS NOTICIAS--------*/
+
+.galeria_sala>.text {
+    width: 50%;
+}
+
 .banner {
-  display: flex;
-}
-.banner img:nth-child(1) {
-  border: 2px solid red;
-}
-
-.banner img:nth-child(2) {
-  border: 2px solid blue;
-}
-
-.banner img:nth-child(3) {
-  border: 2px solid green;
-}
-
-.banner img:nth-child(4) {
-  border: 2px solid yellow;
-}
-
-.banner img:nth-child(5) {
-  border: 2px solid purple;
+    width: 100%;
+    height: 50%;
 }
 
 /*-----SECCION FOOTER-----*/
 footer {
-  display: flex;
-  justify-content: flex-start;
-  background-color: cadetblue;
-  height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ab2930;
+    height: 100px;
+    width: 100%;
 }
 
 footer a {
-  padding: 10px;
-  margin-right: 10px;
+    padding: 10px;
+    margin-right: 10px;
 }
 
 footer img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
 }
