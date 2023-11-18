@@ -184,7 +184,7 @@ footer {
     display: flex;
     margin-top: 20px;
     justify-content: center;
-    background-color: #ab2930;
+    background-color: #241f20;
     height: 100px;
     width: 100%;
 }
@@ -207,8 +207,8 @@ footer a {
     height: 25px;
     line-height: 25px;
     text-align: center;
-    background: #314652;
-    color: #f1f1f1;
+    background: #f1f1f1;
+    color: #241f20; 
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;

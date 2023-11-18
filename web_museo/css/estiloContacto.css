@@ -1,0 +1,17 @@
+.redes_sociales{
+    display: flex;
+    margin-top: 10px;
+}
+.box_redSocial{
+    margin: auto;
+}
+.box_redSocial a{
+    font-size: 30px;
+
+}
+.barra_contacto{
+    width: 100%;
+    background-color: #939589;
+    color: aliceblue;
+    padding: 5px;
+}
