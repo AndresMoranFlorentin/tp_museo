@@ -92,6 +92,32 @@ main {
 
 }
 
+.container {
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px #ab2930;
+    background-color: #241f20;
+}
+
+.container h4 {
+    width: 100%;
+    font-size: 20px;
+    color: #f2eaea;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
+}
+
+.container h4 span {
+    display: block;
+    margin: 10%;
+}
+
 .img_principal {
     position: relative;
     margin: 20px;
