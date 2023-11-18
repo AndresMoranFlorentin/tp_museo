@@ -2,16 +2,21 @@
     display: flex;
     margin-top: 10px;
 }
+
 .box_redSocial{
     margin: auto;
 }
+
 .box_redSocial a{
     font-size: 30px;
-
+    text-decoration: none;
+    color: #ab2930;
 }
+
 .barra_contacto{
     width: 100%;
-    background-color: #939589;
-    color: aliceblue;
+    background-color: #241f20;
+    color: #fefdfd;
     padding: 5px;
+    margin: auto;
 }

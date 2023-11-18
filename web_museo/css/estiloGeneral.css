@@ -3,12 +3,16 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* Ajustamos la dirección principal a columna */
     align-items: center;
     text-align: left;
     color: #241f20;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+h1 {
+    font-size: 32px !important;
+    font-weight: bold !important;
 }
 
 header {
@@ -19,7 +23,6 @@ header {
     left: 0;
     right: 0;
     z-index: 1;
-    /* Color de fondo del encabezado */
 }
 
 header img {
@@ -34,7 +37,6 @@ header img {
     width: 10%;
     height: 5%;
     border-radius: 100%;
-    /*border: 2px solid #241f20;*/
 }
 
 nav {
@@ -67,7 +69,7 @@ nav ul li {
 nav ul li a {
     list-style: none;
     display: block;
-    color: #f2eaea;
+    color: #fefdfd;
     margin: 5px 0px;
     padding: 0px 15px;
     padding: 0;
@@ -77,7 +79,7 @@ nav ul li a {
 nav ul li:hover {
     
     cursor: pointer;
-    border-bottom: 3px solid #f2eaea;
+    border-bottom: 3px solid #fefdfd;
 }
 
 main {
@@ -85,7 +87,6 @@ main {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
-    /* O ajusta según tus necesidades */
     width: 100%;
     padding: 20px;
     min-height: 100vh;
@@ -105,7 +106,7 @@ main {
 .container h4 {
     width: 100%;
     font-size: 20px;
-    color: #f2eaea;
+    color: #fefdfd;
     position: absolute;
     top: 50%;
     left: 80%;
@@ -119,8 +120,8 @@ main {
 }
 
 .img_principal {
+    overflow: hidden;
     position: relative;
-    margin: 20px;
 }
 
 .img_principal>img {
@@ -128,22 +129,17 @@ main {
     height: auto;
 }
 
-/* .img_principal>.text_horario {
-    position: absolute;
-    top: 108%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(173, 17, 17, 0.8);
-    padding: 8px;
-}*/
-.img_principal .text_horario {
+.img_principal h3 {
     display: block;
     border: solid 3px #fefdfd;
     width: 100%;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: #241f20;
     color: #fefdfd;
+    position: sticky;
+    padding: 10px;
+    bottom: 10%;
+    text-align: center;
 }
 
 .btn_login {
@@ -162,16 +158,26 @@ main {
 
 /*****SECCION PARA GALERIA*****/
 .galeria_sala {
-    display: flex;
-    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    border: 1px solid #ab2930;
 }
 
 .galeria_sala>img {
     width: 50%;
 }
 
-.galeria_sala>.text {
-    width: 50%;
+.galeria_sala h3{
+    width: 350px;
+    font-size: 20px;
+    color: #241f20;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
 }
 
 .banner {
@@ -207,7 +213,7 @@ footer a {
     height: 25px;
     line-height: 25px;
     text-align: center;
-    background: #f1f1f1;
+    background: #fefdfd;
     color: #241f20; 
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
