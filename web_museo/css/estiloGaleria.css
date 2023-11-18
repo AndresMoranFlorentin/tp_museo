@@ -46,18 +46,39 @@
 /*-----SECCION FOOTER-----*/
 .footer_g {
     display: flex;
-    justify-content: flex-start;
+    margin-top: 20px;
+    justify-content: center;
     background-color: #ab2930;
     height: 100px;
     width: 100%;
 }
 
-.footer_g>a {
-    padding: 10px;
-    margin-right: 10px;
+.footer_g a {
+    padding: 0px;
+    margin-right: 48px;
+    height: 20px;
 }
 
-.footer_g>img {
-    width: 30px;
-    height: 30px;
+.footer_g .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.footer_g .buttons a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.footer_g> .buttons a:hover {
+    transform: scale(1.2);
 }
