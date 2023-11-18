@@ -7,7 +7,8 @@
 }
 .box_redSocial a{
     font-size: 30px;
-
+    text-decoration: none;
+    color: #ab2930;
 }
 .barra_contacto{
     width: 100%;
