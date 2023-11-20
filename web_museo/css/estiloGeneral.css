@@ -1,225 +1,258 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    color: #241f20;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  color: #241f20;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 h1 {
-    font-size: 32px !important;
-    font-weight: bold !important;
+  font-size: 32px !important;
+  font-weight: bold !important;
 }
 
 header {
-    text-align: center;
-    width: 100%;
-    background: #ab2930;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  text-align: center;
+  width: 100%;
+  background: #ab2930;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 header img {
-    max-width: 100%;
-    margin: 15px;
-    width: 60px;
-    height: 60px;
-    border-radius: 54%;
+  max-width: 100%;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 54%;
 }
 
 .logo_museo {
-    width: 10%;
-    height: 5%;
-    border-radius: 100%;
+  width: 10%;
+  height: 5%;
+  border-radius: 100%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
-    z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  z-index: 2;
 }
 nav div {
-    display: inherit; 
-    justify-items: end;
+  display: inherit;
+  justify-items: end;
 }
 nav ul {
-    list-style: none;
-    overflow: hidden;
-    margin: auto;
-    margin-right: 15px;
-
+  list-style: none;
+  overflow: hidden;
+  margin: auto;
+  margin-right: 15px;
 }
 
 nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    border-bottom: solid 3px transparent;
-    margin: auto 15px;
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-bottom: solid 3px transparent;
+  margin: auto 15px;
 }
 
 nav ul li a {
-    list-style: none;
-    display: block;
-    color: #fefdfd;
-    margin: 5px 0px;
-    padding: 0px 15px;
-    padding: 0;
-    text-decoration: none;
+  list-style: none;
+  display: block;
+  color: #fefdfd;
+  margin: 5px 0px;
+  padding: 0px 15px;
+  padding: 0;
+  text-decoration: none;
 }
 
 nav ul li:hover {
-    
-    cursor: pointer;
-    border-bottom: 3px solid #fefdfd;
+  cursor: pointer;
+  border-bottom: 3px solid #fefdfd;
 }
 
 main {
-    align-items: center;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    max-width: 800px;
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-
+  align-items: center;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 .container {
-    overflow: hidden;
-    position: relative;
-    margin: 50px auto;
-    margin-bottom: 200px;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px #ab2930;
-    background-color: #241f20;
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px #ab2930;
+  background-color: #241f20;
 }
 
 .container h4 {
-    width: 100%;
-    font-size: 20px;
-    color: #fefdfd;
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 50px;
+  width: 100%;
+  font-size: 20px;
+  color: #fefdfd;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 50px;
 }
 
 .container h4 span {
-    display: block;
-    margin: 10%;
+  display: block;
+  margin: 10%;
+  word-wrap: break-word;
 }
 
 .img_principal {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
-.img_principal>img {
-    max-width: 100%;
-    height: auto;
+.img_principal > img {
+  max-width: 100%;
+  height: auto;
 }
 
 .img_principal h3 {
-    display: block;
-    border: solid 3px #fefdfd;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #241f20;
-    color: #fefdfd;
-    position: sticky;
-    padding: 10px;
-    bottom: 10%;
-    text-align: center;
+  display: block;
+  border: solid 3px #fefdfd;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #241f20;
+  color: #fefdfd;
+  position: sticky;
+  padding: 10px;
+  bottom: 10%;
+  text-align: center;
 }
 
 .btn_login {
-    background-color: #241f20;
-    color: #fefdfd;
-    font-size: 16px;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-   margin: auto;
+  background-color: #241f20;
+  color: #fefdfd;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .contenido {
-    margin: 20px 0;
+  margin: 20px 0;
+}
+.div_autores {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
+.div_autores .autor {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.div_autores .autor h4 {
+  flex: content;
+  float: left;
+  margin: 10px 0;
+  text-align: start;
+  word-wrap: break-word;
+  border: solid 2px #241f20;
+
+}
+.div_autores .autor h4 span {
+  display: block;
+  margin: 10%;
+  word-wrap: break-word;
+
+}
+.div_autores .autor img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
 /*****SECCION PARA GALERIA*****/
 .galeria_sala {
-    overflow: hidden;
-    position: relative;
-    margin: 20px auto;
-    margin-bottom: 20px;
-    border: 1px solid #ab2930;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  border: 1px solid #ab2930;
 }
 
-.galeria_sala>img {
-    width: 50%;
+.galeria_sala > img {
+  width: 50%;
 }
 
-.galeria_sala h3{
-    width: 350px;
-    font-size: 20px;
-    color: #241f20;
-    position: absolute;
-    top: 40%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 50px;
+.galeria_sala h3 {
+  width: 350px;
+  font-size: 20px;
+  color: #241f20;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 50px;
 }
 
 .banner {
-    width: 100%;
-    height: 50%;
+  width: 100%;
+  height: 50%;
 }
 
 /*-----SECCION FOOTER-----*/
 footer {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    background-color: #241f20;
-    height: 100px;
-    width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  background-color: #241f20;
+  height: 100px;
+  width: 100%;
 }
 
 footer a {
-    padding: 10px;
-    margin-right: 48px;
+  padding: 10px;
+  margin-right: 48px;
 }
 
 .buttons {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-around;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
 }
 
 .buttons a {
-    text-decoration: none;
-    font-size: 20px;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    background: #fefdfd;
-    color: #241f20; 
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
+  text-decoration: none;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #fefdfd;
+  color: #241f20;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
 }
 
 .buttons a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }

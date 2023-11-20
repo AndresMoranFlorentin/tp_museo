@@ -1,3 +1,6 @@
+img{
+    position: relative;
+}
 .redes_sociales{
     display: flex;
     margin-top: 10px;
@@ -20,4 +23,23 @@
     color: #fefdfd;
     padding: 5px;
     margin: auto;
+}
+.contenedor{
+    position: relative;
+
+}
+.btn_excursion{
+    padding: 20px;
+    color: #fefdfd;
+    background-color: green;
+    border-radius: 20%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+ img:hover{
+    filter: blur(5px);
+
 }
