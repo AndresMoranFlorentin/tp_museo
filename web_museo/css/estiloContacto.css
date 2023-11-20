@@ -24,10 +24,7 @@ img{
     padding: 5px;
     margin: auto;
 }
-.contenedor{
-    position: relative;
 
-}
 .btn_excursion{
     padding: 20px;
     color: #fefdfd;
@@ -42,4 +39,47 @@ img{
  img:hover{
     filter: blur(5px);
 
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fefdfd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #241f20;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    max-width: 500px;
+    background-color: #d9bdbd;
+    color: #241f20;
+    padding: 10px;
+    border: 1px solid #241f20;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #ac797b;
 }

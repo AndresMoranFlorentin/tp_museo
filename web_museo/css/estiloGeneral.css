@@ -93,7 +93,6 @@ main {
 .container {
   overflow: hidden;
   position: relative;
-  margin: 50px auto;
   margin-bottom: 50px;
   border-radius: 20px;
   box-shadow: 5px 8px 12px #ab2930;
@@ -114,6 +113,24 @@ main {
 .container h4 span {
   display: block;
   margin: 10%;
+  word-wrap: break-word;
+}
+
+.container h5 {
+  width: 100%;
+  font-size: 16px;
+  color: #fefdfd;
+  position: absolute;
+  top: 50%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 50px;
+}
+
+.container h5 span {
+  width: 500px;
+  display: block;
+  margin: 5%;
   word-wrap: break-word;
 }
 
@@ -193,7 +210,6 @@ main {
 .galeria_sala {
   overflow: hidden;
   position: relative;
-  margin: 20px auto;
   margin-bottom: 20px;
   border: 1px solid #ab2930;
 }
@@ -204,7 +220,7 @@ main {
 
 .galeria_sala h3 {
   width: 350px;
-  font-size: 20px;
+  font-size: 18px;
   color: #241f20;
   position: absolute;
   top: 50%;
