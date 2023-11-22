@@ -8,3 +8,12 @@ function irAlFormulario() {
 
 // Agregar un evento de click al botón y asignarle la función irAlFormulario
 login.addEventListener("click", irAlFormulario);
+// Recorrer los enlaces y agregar un evento de clic 
+var links = document.querySelectorAll("nav ul li a");
+links.addEventListener("click",()=>{
+  for (var i = 0; i < links.length; i++){ 
+    links[i].addEventListener("click", function() { // Remover la clase “active” de todos los enlaces 
+      for (var j = 0; j < links.length; j++) { links[j].classList.remove("active");
+     } // Agregar la clase “active” al enlace presionado 
+  this.classList.add("active"); }); }
+})

@@ -79,12 +79,15 @@ nav ul li:hover {
   cursor: pointer;
   border-bottom: 3px solid #fefdfd;
 }
-
-main {
+nav ul li:active {
+  cursor: pointer;
+  border-bottom: 3px solid #fefdfd;
+}
+ main {
   align-items: center;
   text-align: left;
   font-family: "Roboto", sans-serif;
-  max-width: 840px;
+  max-width: 150vh;
   width: 100%;
   padding: 20px;
   min-height: 100vh;
