@@ -27,9 +27,8 @@ header {
 header img {
   max-width: 100%;
   margin: 15px;
-  width: 60px;
-  height: 60px;
-  border-radius: 54%;
+  width: 40px;
+  height: 40px;
 }
 
 .logo_museo {
@@ -109,14 +108,14 @@ main {
   color: #fefdfd;
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 75%;
   transform: translate(-50%, -50%);
   padding-bottom: 50px;
 }
 
 .container h4 span {
   display: block;
-  margin: 10%;
+  margin: 5% auto;
   word-wrap: break-word;
 }
 
@@ -126,7 +125,7 @@ main {
   color: #fefdfd;
   position: absolute;
   top: 50%;
-  left: 81%;
+  left: 55%;
   transform: translate(-50%, -50%);
   padding-bottom: 50px;
 }
@@ -134,7 +133,7 @@ main {
 .container h5 span {
   width: 500px;
   display: block;
-  margin: 7%;
+  margin: 7% auto;
   word-wrap: break-word;
 }
 
@@ -162,8 +161,16 @@ main {
 }
 
 .btn_login {
-  background-color: #241f20;
-  color: #fefdfd;
+  background: none;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.btn_loged {
+  background: none;
   font-size: 16px;
   border: none;
   padding: 15px;
@@ -254,15 +261,18 @@ main {
 #formulario {
   width: 400px;
   margin: 30px;
-  background: white;
+  background: #241f20;
   display: block; /* Ocultar el formulario por defecto */
-  border: solid 1px #241f20;
+  border: solid 1px #ab2930;
+  border-radius: 10%;
+  box-shadow: 5px 8px 12px #ab2930;
 }
 
 /* Estilos para el título del formulario */
 #formulario h1 {
   text-align: center;
   font-size: 24px;
+  color: #fefdfd;
 }
 
 /* Estilos para el formulario */
@@ -274,23 +284,25 @@ main {
 #formulario label {
   display: block;
   margin-bottom: 10px;
+  color: #fefdfd;
+  font-weight: bold;
 }
 
 /* Estilos para los campos de texto del formulario */
 #formulario input {
   width: 100%;
   height: 30px;
-  border: 1px solid gray;
+  border: 1px solid #241f20;
   margin-bottom: 20px;
 }
 
 /* Estilos para los botones del formulario */
-#formulario #registrar {
+#formulario #iniciar_sesion {
   width: 100px;
   height: 40px;
-  background: green;
+  background: #d9bdbd;
   border-radius: 10%;
-  color: white;
+  color: #241f20;
   cursor: pointer;
 }
 
@@ -301,7 +313,7 @@ main {
   background: red;
   border-radius: 10%;
   float: right;
-  color: white;
+  color: #fefdfd;
   cursor: pointer;
 }
 /*-----SECCION FOOTER-----*/
