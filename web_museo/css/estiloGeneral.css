@@ -181,6 +181,7 @@ main {
 .contenido {
   margin: 20px 0;
 }
+
 /***SECCION PARA HOME RESPONSIVE***/
 @media screen and (max-width: 550px) {
 
