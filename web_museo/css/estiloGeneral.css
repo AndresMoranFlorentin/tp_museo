@@ -37,7 +37,9 @@ header img {
   height: 5%;
   border-radius: 100%;
 }
-
+.menu {
+  display: none;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -174,19 +176,52 @@ main {
 }
 /***SECCION PARA HOME RESPONSIVE***/
 @media screen and (max-width: 550px) {
-  body {
-    background-color: rgb(111, 111, 200);
+
+  header {
+    text-align: end;
+    width: 100%;
+    background: #ab2930;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+  }
+  .logo_museo {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+    font-size: 25px;
+    width: 30%;
+    margin-right: 0%;
   }
   nav {
-    position: absolute;
-    top: 0%;
-    right: 0;
-  }
-  nav ul{
+    display: flex;
     flex-direction: column;
     align-items: end;
+    gap: 1rem;
+  }
+  nav div {
+    list-style: none;
+    overflow: hidden;
+    margin: auto;
+    margin-right: 15px;
+    display: flex;
+    background-color: #241f20;
+    color: #fefdfd;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
+  nav ul li {
+    float: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-bottom: solid 3px transparent;
+    margin: auto 15px;
+  }
+  .btn_login {
+    display: none;
+  }
 }
 /*****SECCION PARA GALERIA*****/
 .galeria_sala {
