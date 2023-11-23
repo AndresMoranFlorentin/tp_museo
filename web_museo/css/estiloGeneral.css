@@ -9,12 +9,16 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
 h1 {
   font-size: 32px !important;
   font-weight: bold !important;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   width: 100%;
   background: #ab2930;
@@ -36,9 +40,11 @@ header img {
   height: 5%;
   border-radius: 100%;
 }
+
 .menu {
   display: none;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -46,10 +52,12 @@ nav {
   padding: 0px 10px;
   z-index: 2;
 }
+
 nav div {
   display: inherit;
   justify-items: end;
 }
+
 nav ul {
   list-style: none;
   overflow: hidden;
@@ -79,10 +87,12 @@ nav ul li:hover {
   cursor: pointer;
   border-bottom: 3px solid #fefdfd;
 }
+
 nav ul li:active {
   cursor: pointer;
   border-bottom: 3px solid #fefdfd;
 }
+
 main {
   align-items: center;
   text-align: left;
@@ -115,7 +125,7 @@ main {
 
 .container h4 span {
   display: block;
-  margin: 5% auto;
+  margin: 7% 30px 7% 20%;;
   word-wrap: break-word;
 }
 
@@ -131,9 +141,9 @@ main {
 }
 
 .container h5 span {
-  width: 500px;
+  width: 400px;
   display: block;
-  margin: 7% auto;
+  margin: 7% 20px 7% 35%;
   word-wrap: break-word;
 }
 
@@ -142,7 +152,7 @@ main {
   position: relative;
 }
 
-.img_principal > img {
+.img_principal>img {
   max-width: 100%;
   height: auto;
 }
@@ -193,44 +203,55 @@ main {
     z-index: 1;
     position: absolute;
   }
-  .logo_museo {
+  .logo_museo{
+    width: 20%;
+    height: 20%;
+  }
+  .btn_login {
     display: none;
   }
+
   nav .menu {
     display: flex;
     font-size: 25px;
-    width: 30%;
+    margin-left: 60%;
+
+    justify-content: center;
+
+    width: 10%;
     margin-right: 0%;
   }
-  nav {
+nav {
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 1rem;
   }
   nav div {
-    list-style: none;
-    overflow: hidden;
-    margin: auto;
-    margin-right: 15px;
-    display: flex;
-    background-color: #241f20;
-    color: #fefdfd;
-    flex-direction: column;
+     flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
   }
-
-  nav ul li {
+  
+ ul li  {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
     float: none;
     font-family: Arial, sans-serif;
-    font-size: 16px;
     border-bottom: solid 3px transparent;
-    margin: auto 15px;
-  }
-  .btn_login {
-    display: none;
-  }
+    margin:auto;
+    background-color:  #241f20;
+   }
+  ul li.show {
+    display: block;
+    height: 20px; /* Ajusta la altura máxima según sea necesario */
 }
+}
+
+
+
 /*****SECCION PARA GALERIA*****/
 .galeria_sala {
   overflow: hidden;
@@ -239,7 +260,7 @@ main {
   border: 1px solid #ab2930;
 }
 
-.galeria_sala > img {
+.galeria_sala>img {
   width: 50%;
 }
 
@@ -258,12 +279,14 @@ main {
   width: 100%;
   height: 50%;
 }
+
 /**SECCION PARA EL FORMULARIO**/
 #formulario {
   width: 400px;
   margin: 30px;
   background: #241f20;
-  display: block; /* Ocultar el formulario por defecto */
+  display: block;
+  /* Ocultar el formulario por defecto */
   border: solid 1px #ab2930;
   border-radius: 10%;
   box-shadow: 5px 8px 12px #ab2930;
@@ -317,6 +340,7 @@ main {
   color: #fefdfd;
   cursor: pointer;
 }
+
 /*-----SECCION FOOTER-----*/
 footer {
   display: flex;
@@ -357,11 +381,13 @@ footer a {
 .buttons a:hover {
   transform: scale(1.2);
 }
+
 footer #copy {
   margin-top: 22px;
   border-top: solid 1px #fefdfd;
   width: 80%;
 }
+
 footer p {
   color: #fefdfd;
   text-align: center;
