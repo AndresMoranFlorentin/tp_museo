@@ -219,7 +219,9 @@ main {
     display: flex;
     border: 0px;
   }
-
+  button:hover {
+    background-color: #ac797b;
+}
   nav {
     display: flex;
     position: relative;
@@ -252,6 +254,23 @@ main {
   nav .menu.active+ul {
     display: flex !important;
   }
+  p>img{
+    width: 70%;
+   }
+  .img_principal>img {
+    margin-top: 20px;
+    max-width: 100%;
+    height:200px;
+  }
+  
+  .img_principal h3 {
+    width: 90%;
+  }
+  main {
+    max-width: 100vh;
+    width: 90%;
+    padding: 20px;
+   }
 }
 
 
@@ -322,29 +341,32 @@ main {
   height: 30px;
   border: 1px solid #241f20;
   margin-bottom: 20px;
+  background-color: #fefdfd;
 }
 
 /* Estilos para los botones del formulario */
 #formulario #iniciar_sesion {
-  width: 100px;
-  height: 40px;
-  background: #d9bdbd;
+  width: 150px;
+  height: 56px;
+  right: 80%;
+  background: #1aa628;
   border-radius: 10%;
-  color: #241f20;
-  cursor: pointer;
-}
-
-/* Estilos para el botón de cancelar */
-#formulario #cancelar {
-  width: 100px;
-  height: 40px;
-  background: red;
-  border-radius: 10%;
-  float: right;
   color: #fefdfd;
   cursor: pointer;
 }
-
+#cerrar_formulario {
+  width: 3%;
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  top: 8%; /* Ajusta la posición en la parte superior según sea necesario */
+  right: 33%; /* Ajusta la posición en la parte derecha según sea necesario */
+  background-color: red;
+  color: #fefdfd;
+  border-radius: 5%;  
+  padding: 5px 1px;
+  cursor: pointer;
+}
 /*-----SECCION FOOTER-----*/
 footer {
   display: flex;
@@ -353,8 +375,9 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #241f20;
-  height: 130px;
+  height: 150px;
   width: 100%;
+  margin-bottom: auto;
 }
 
 footer a {
