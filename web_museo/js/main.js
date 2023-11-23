@@ -31,9 +31,9 @@ function updateMenu() {
     const loginMenuItem = document.getElementById("loginMenuItem");
     if (loginMenuItem) {
         if (isAuthenticated) {
-            loginMenuItem.innerHTML = '<a href="javascript:logout()" class="btn-login-logout">Logout <img src="img/logos/logout.png"></a>';
+            loginMenuItem.innerHTML = '<a href="javascript:logout()" class="btn-login-logout"><img src="img/logos/logout.png"></a>';
         } else {
-            loginMenuItem.innerHTML = '<a href="formulario.html" class="btn-login-logout">Login<img src="img/logos/login_1.png"></a>';
+            loginMenuItem.innerHTML = '<a href="formulario.html" class="btn-login-logout"><img src="img/logos/login_1.png"></a>';
         }
     }
 }
@@ -51,4 +51,22 @@ document.addEventListener('DOMContentLoaded', function () {
         link.parentElement.classList.add('active');
     }
 });
+
+// Obtén el botón del menú y el ul del menú
+var menuBtn = document.getElementById("menuBtn");
+var menuUl = document.querySelector("nav ul");
+
+// Agrega un evento click al botón del menú
+menuBtn.addEventListener("click", function() {
+  // Alternar la clase "active" en el botón del menú
+  this.classList.toggle("active");
+
+  // Mostrar u ocultar el menú ul
+  if (menuUl.style.display === "block") {
+    menuUl.style.display = "none";
+  } else {
+    menuUl.style.display = "block";
+  }
+});
+
 document.getElementById("iniciar_sesion").addEventListener("click", login);
