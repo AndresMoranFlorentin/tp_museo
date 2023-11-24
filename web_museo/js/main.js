@@ -16,7 +16,9 @@ function login() {
         updateMenu();
         window.location.href = "home_admin.html";
     } else {
-        alert("Invalid username or password");
+        const mensajeError = document.getElementById("mensaje_error");
+        mensajeError.textContent = "X. Nombre de usuario o contraseña inválidos";
+        mensajeError.style.display = "block";
     }
 }
 
@@ -52,21 +54,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("iniciar_sesion").addEventListener("click", login);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("cerrar_formulario").addEventListener("click", function () {
+        window.location.href = "home.html";
+    });
+});
+
 // Obtén el botón del menú y el ul del menú
 var menuBtn = document.getElementById("menuBtn");
 var menuUl = document.querySelector("nav ul");
 
 // Agrega un evento click al botón del menú
-menuBtn.addEventListener("click", function() {
-  // Alternar la clase "active" en el botón del menú
-  this.classList.toggle("active");
+menuBtn.addEventListener("click", function () {
+    // Alternar la clase "active" en el botón del menú
+    this.classList.toggle("active");
 
-  // Mostrar u ocultar el menú ul
-  if (menuUl.style.display === "block") {
-    menuUl.style.display = "none";
-  } else {
-    menuUl.style.display = "block";
-  }
+    // Mostrar u ocultar el menú ul
+    if (menuUl.style.display === "block") {
+        menuUl.style.display = "none";
+    } else {
+        menuUl.style.display = "block";
+    }
 });
-
-document.getElementById("iniciar_sesion").addEventListener("click", login);
