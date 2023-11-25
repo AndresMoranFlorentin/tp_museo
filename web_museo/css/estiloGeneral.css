@@ -87,12 +87,11 @@ nav ul li:hover {
   cursor: pointer;
   border-bottom: 3px solid #fefdfd;
 }
-
-nav ul li:active {
+ 
+nav ul li.active {
   cursor: pointer;
-  border-bottom: 3px solid #fefdfd;
+  border-bottom: 3px solid #fefdfd; /* Estilo para el enlace activo */
 }
-
 main {
   align-items: center;
   text-align: left;

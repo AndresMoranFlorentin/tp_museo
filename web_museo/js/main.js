@@ -1,3 +1,26 @@
+function changePage(link) {
+   // Obtener la URL actual
+   var currentPageUrl = window.location.href;
+
+   // Desactivar el borde inferior en todos los enlaces
+   var links = document.querySelectorAll('nav ul li');
+   links.forEach(function (el) {
+       el.style.borderBottom = 'solid 3px transparent'; // Eliminar el borde inferior
+       el.style.cursor = 'default'; // Restablecer el cursor para enlaces desactivados
+   });
+
+   // Activar el borde inferior en el enlace correspondiente a la página actual
+   links.forEach(function (el) {
+       var linkUrl = el.href;
+       if (currentPageUrl === linkUrl) {
+           el.style.borderBottom = '3px solid #fefdfd'; // Aplicar estilo para enlaces de la página actual
+           el.style.cursor = 'pointer'; // Opcional: Cambiar el cursor para el enlace de la página actual
+       }
+   });
+   // Obtener el texto del enlace clicado para mostrar la página actual
+   var currentPage = link.textContent;
+   console.log('Estás en la página: ' + currentPage);
+}
 let isAuthenticated = false; // Estado de inicio de sesión
 
 const users = [

@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/estiloGeneral.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="^5^" rel="stylesheet">
+  <link rel="stylesheet" href="css/estiloGeneral.css" />
+
   <title>Sitio del Museo</title>
 </head>
 <div></div>
-
 <body>
   <header>
     <nav>
       <img class="logo_museo" src="img/logos/image.png" />
       <div>
         <ul>
-          <li><a href="home.html">Inicio</a></li>
-          <li><a href="acerca_de_nosotros.html">Nosotros</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="home.html" onclick="changePage(this)">Inicio</a></li>
+          <li><a href="acerca_de_nosotros.html" onclick="changePage(this)">Nosotros</a></li>
+          <li><a href="galeria.html" onclick="changePage(this)">Galeria</a></li>
+          <li><a href="contacto.html" onclick="changePage(this)">Contacto</a></li>
         </ul>
         <button class="btn_loged" id="loged" type="button">
           <img src="img/logos/logout.png">
