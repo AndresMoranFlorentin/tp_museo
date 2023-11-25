@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estiloGeneral.css" />
-    <title>Sitio del Museo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloGeneral.css" />
+  <title>Sitio del Museo</title>
 </head>
+
 <body>
-    <div id="formulario">
-        <h1>Iniciar Sesión</h1>
-        <form>
-          <label for="usuario">Usuario:</label>
-          <input type="usuario" id="usuario" name="usuario" required>
-          <label for="contraseña">Contraseña:</label>
-          <input type="password" id="contraseña" name="contraseña" required>
-          <button type="button" id="iniciar_sesion">Iniciar Sesión</button>
-          <button type="button" id="cancelar">Cancelar</button>
-        </form>
-      </div>
+  <div id="formulario">
+    <button type="button" id="cerrar_formulario">
+      <span>X</span>
+    </button>
+    <h1>Iniciar Sesión</h1>
+    <form>
+      <label for="username">Usuario:</label>
+      <input style="color: #241f20;" type="username" id="username" name="username" required>
+
+      <label for="password">Contraseña:</label>
+      <input style="color: #241f20;" type="password" id="password" name="password" required>
+
+      <p id="mensaje_error" style="color: #ab2930; display: none;"></p>
+
+      <button type="button" id="iniciar_sesion">
+        <h3>Iniciar Sesión</h3>
+      </button>
+    </form>
+  </div>
 </body>
-<script src="js/form_login.js"></script>
+<!--<script src="js/form_login.js"></script> -->
+<script src="js/main.js"></script>
+
 </html>

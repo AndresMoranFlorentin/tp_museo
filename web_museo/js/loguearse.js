@@ -8,12 +8,19 @@ function irAlFormulario() {
 
 // Agregar un evento de click al botón y asignarle la función irAlFormulario
 login.addEventListener("click", irAlFormulario);
-// Recorrer los enlaces y agregar un evento de clic 
-var links = document.querySelectorAll("nav ul li a");
-links.addEventListener("click",()=>{
-  for (var i = 0; i < links.length; i++){ 
-    links[i].addEventListener("click", function() { // Remover la clase “active” de todos los enlaces 
-      for (var j = 0; j < links.length; j++) { links[j].classList.remove("active");
-     } // Agregar la clase “active” al enlace presionado 
-  this.classList.add("active"); }); }
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu");
+    const navList = document.querySelector("nav ul");
+
+    menuBtn.addEventListener("click", function () {
+        navList.style.display = navList.style.display === "block" ? "none" : "block";
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            navList.style.display = "block";
+        } else {
+            navList.style.display = "none";
+        }
+    });
+});
