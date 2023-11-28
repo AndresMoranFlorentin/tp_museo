@@ -87,11 +87,13 @@ nav ul li:hover {
   cursor: pointer;
   border-bottom: 3px solid #fefdfd;
 }
- 
+
 nav ul li.active {
   cursor: pointer;
-  border-bottom: 3px solid #fefdfd; /* Estilo para el enlace activo */
+  border-bottom: 3px solid #fefdfd;
+  /* Estilo para el enlace activo */
 }
+
 main {
   align-items: center;
   text-align: left;
@@ -381,7 +383,7 @@ main {
 #mensaje_error {
   font-weight: bold;
   display: flex !important;
-  justify-content: center; 
+  justify-content: center;
 }
 
 /*-----SECCION FOOTER-----*/
@@ -399,7 +401,7 @@ footer {
 
 footer a {
   padding: 10px;
-  margin-right: 48px;
+  margin: 24px 24px 0;
 }
 
 .buttons {
