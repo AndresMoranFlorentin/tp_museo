@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById("cerrar_formulario").addEventListener("click", function () {
+    document.getElementById("cerrar_formulario").addEventListener("click",()=>{
         window.location.href = "home.html";
     });
 });

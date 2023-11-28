@@ -36,7 +36,29 @@ img{
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-
+.error {
+    background-color: #ffcccc ; /* Fondo de color rojo tenue */
+    color: #241f20; /* Color de texto rojo */
+    padding: 8px; /* Espaciado interno para mejorar la legibilidad */
+    margin-top: -14px; /* Espaciado superior para separar el mensaje del campo */
+    width: 100%; /* Ancho igual al 100% del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  .contenedor>.oculto {
+    display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #dff0d8; /* Color de fondo verde tenue */
+  color: #3c763d; /* Color de texto verde oscuro */
+  padding: 15px;
+  border: 1px solid #d6e9c6; /* Borde verde más oscuro */
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 .contenedor {
     max-width: 600px;
     margin: 20px auto;

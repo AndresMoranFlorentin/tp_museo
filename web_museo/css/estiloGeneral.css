@@ -229,6 +229,7 @@ main {
     flex-direction: column;
     align-items: end;
     gap: 1rem;
+    background-color: #ac797b;
   }
 
   nav div {
@@ -242,7 +243,7 @@ main {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ab2930;
+    background-color: #241f20;
     margin: auto;
     padding: 0;
     flex-direction: column;
